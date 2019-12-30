@@ -7,6 +7,9 @@
 
 import Foundation
 import HTTP
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 extension HTTPRequest {
     var urlRequest: URLRequest {
